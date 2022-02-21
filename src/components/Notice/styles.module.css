@@ -1,0 +1,45 @@
+.notice {
+  width: 350px;
+  display: flex;
+  min-height: 75px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 1;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 2px rgb(69, 69, 69);
+
+  transition: 0.2s;
+  animation: fadeIn 0.75s;
+}
+.notice:hover {
+  transition: 0.2s;
+  transform: scale(0.95);
+  box-shadow: 0px 0px 3px gray;
+}
+.success {
+  background-color: #06fa47;
+}
+.warning {
+  background-color: #fdbb05;
+}
+.error {
+  background-color: #ff2f2f;
+}
+.info {
+  background-color: #0084ff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
